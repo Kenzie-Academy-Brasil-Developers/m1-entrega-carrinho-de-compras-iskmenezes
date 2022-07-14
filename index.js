@@ -53,7 +53,8 @@ for (let i = 0; i < productsCart.length; i++) {
     preco = produto.price
     nome = produto.name 
     let li = document.createElement("li")
-    li.innerText = `${nome} R$ ${preco}`
+    li.classList.add("lisprodutos")
+    li.innerText = `${nome}            R$ ${preco}`
     lista.appendChild(li)
 }
 

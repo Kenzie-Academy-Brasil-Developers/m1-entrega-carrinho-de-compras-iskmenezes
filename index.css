@@ -8,7 +8,12 @@
     
 }
 
-li{
+.lisprodutos{
     background-color: blueviolet;
     list-style-type: none;
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
 }
