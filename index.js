@@ -45,6 +45,9 @@ sec.appendChild(botao)
 ul.classList = 'produtolista'
 let lista = document.querySelector(".produtolista")
 
+
+
+
 botao.value = 'finalizar compra'
 botao.type = 'button'
 botao.classList = 'botaum'
@@ -78,6 +81,18 @@ for (let i = 0; i < productsCart.length; i++) {
     li.appendChild(spam)
     ul.appendChild(li)
 }
+
+let total = document.createElement("li")
+total.classList.add("lisprodutos")
+ul.appendChild(total)
+let textotal = document.createElement("h2")
+textotal.innerText = "Total"
+textotal.classList.add("h2lista")
+total.appendChild(textotal)
+let somatotal = document.createElement("spam")
+somatotal.classList.add("spamlista")
+somatotal.innerText = `R$${soma}`
+total.appendChild(somatotal)
 
 
 
