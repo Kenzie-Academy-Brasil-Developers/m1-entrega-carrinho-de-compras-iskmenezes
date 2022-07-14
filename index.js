@@ -32,7 +32,7 @@ for (let i = 0; i < productsCart.length; i++) {
 
 
 
-var botao = document.createElement("button")
+var botao = document.createElement("input")
 const sec = document.createElement("section")
 const body = document.body
 const main = document.createElement("main")
@@ -45,8 +45,22 @@ sec.appendChild(botao)
 ul.classList = 'produtolista'
 let lista = document.querySelector(".produtolista")
 
-botao.innerText = 'finalizar compra'
+botao.value = 'finalizar compra'
+botao.type = 'button'
 botao.classList = 'botaum'
+console.log(botao)
+
+let titulo = document.createElement("li")
+let hh2 =document.createElement("h2")
+hh2.classList.add("h2lista")
+hh2.innerText = "item"
+let sspam = document.createElement("spam")
+sspam.classList.add("spamlista")
+sspam.innerText = "Valor"
+titulo.appendChild(hh2)
+titulo.appendChild(sspam)
+ul.appendChild(titulo)
+titulo.classList.add("lisprodutos")
 
 for (let i = 0; i < productsCart.length; i++) {
     produto= productsCart[i]
@@ -54,8 +68,15 @@ for (let i = 0; i < productsCart.length; i++) {
     nome = produto.name 
     let li = document.createElement("li")
     li.classList.add("lisprodutos")
-    li.innerText = `${nome}            R$ ${preco}`
-    lista.appendChild(li)
+    let h2 =document.createElement("h2")
+    let spam = document.createElement("spam")
+    h2.classList.add("h2lista")
+    spam.classList.add("spamlista")
+    h2.innerText = nome
+    spam.innerText = preco
+    li.appendChild(h2)
+    li.appendChild(spam)
+    ul.appendChild(li)
 }
 
 
