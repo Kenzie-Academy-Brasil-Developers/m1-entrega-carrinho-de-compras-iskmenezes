@@ -1,0 +1,14 @@
+.produtolista{
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.botaum {
+    width: 100%;
+    
+}
+
+li{
+    background-color: blueviolet;
+    list-style-type: none;
+}
